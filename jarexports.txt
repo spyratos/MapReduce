@@ -1,0 +1,10 @@
+bin/hadoop com.sun.tools.javac.Main FriendsNum.java
+jar cf friendsnum.jar FriendsNum*.class
+bin/hadoop jar friendsnum.jar FriendsNum input20/ output20/
+bin/hadoop jar friendsnum.jar FriendsNum input500/ output500/
+
+
+bin/hadoop com.sun.tools.javac.Main FriendsCommon.java 
+jar cf friendscommon.jar FriendsCommon*.class
+bin/hadoop jar friendscommon.jar FriendsCommon input20/ output20-common/
+bin/hadoop jar friendscommon.jar FriendsCommon input500/ output500-common/
